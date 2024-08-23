@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>cart Quantity</title>
+  </head>
+  <body>
+    <button onclick="console.log(`Cart Quantity: ${CartQuantity}`)">show Quantity</button>
+    <button onclick="CartQuantity++; console.log(`Cart Quantity: ${CartQuantity}`)">Add To Cart</button>
+    <button onclick="CartQuantity +=2; console.log(`Cart Quantity: ${CartQuantity}`)">+2</button>
+    <button onclick="CartQuantity +=3; console.log(`Cart Quantity: ${CartQuantity}`)">+3</button>
+    <button 
+    onclick="
+    CartQuantity =0;
+    console.log(`Cart Was Reset.`);
+    console.log(`Cart Quantity: ${CartQuantity}
+    `)">Reset Cart</button>
+
+    <script>
+      
+      let cartQuantity = 0;
+      
+    </script>
+  </body>
+  <!--naming convertions 4 types;
+  camelCase     cartQuantity; pascelcase    cartQuantity; use in JS
+  kebab-case    cart-quantity; use in css&html   
+  snak_case     cart_quantity; used for other languages-->
+</html>
